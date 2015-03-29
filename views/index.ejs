@@ -2,13 +2,21 @@
   <head>
     <style>
     </style>
-    <scripts>
-    </scripts>
+    <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="js/index.js"
+    <script>
+      $(document).ready(function() {
+        console.log("ready!");
+        alert('hello')
+      })
+    </script>
   </head>
   <body>
     <h1>Welcome to the boutique</h1>
     <div id='cart'>
-      0 items
+    <h2>Shopping Cart</h2>
+    <span id='count'>0 items</span>
     </cart>
- </body
+    <button id='pick_item'>Add to basket</button>
 </html>

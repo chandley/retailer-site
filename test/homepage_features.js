@@ -11,9 +11,11 @@ describe('homepage', function(){
 
   describe("shopping cart", function() {
     it("user adds an item", function() {
-      expect("#cart").to.include.text("0 items");
-      this.mouse.click('#add-item')
-      expect('#cart').to.include.text('1 item');
+      casper.then(function(){
+        expect("#cart").to.include.text("0 items");
+        this.mouse.click('#pick_item')
+        expect('#cart').to.include.text('1 item');
+      })
     });
     
   })  
