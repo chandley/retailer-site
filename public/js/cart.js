@@ -6,7 +6,7 @@ function Cart() {
 module.exports = Cart;
 
 Cart.prototype.productCount = function() {
-  return 0;
+  return this.products.length
 };  
 
 Cart.prototype.add =

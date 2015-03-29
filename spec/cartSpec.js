@@ -16,6 +16,11 @@ describe("Cart", function() {
     cart.add('product')
     expect(cart.products).toContain('product')
   });
+
+  it("can count one item", function() {
+    cart.add('product')
+    expect(cart.productCount()).toEqual(1)
+  });
   
 });  
 
