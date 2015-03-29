@@ -9,7 +9,7 @@ describe("Cart", function() {
   });
 
   it("starts off empty", function() {
-    expect(cart.itemCount()).toEqual(0)
+    expect(cart.productCount()).toEqual(0)
   });
   
 });  

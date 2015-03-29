@@ -3,7 +3,6 @@ function Cart() {
 
 module.exports = Cart;
 
-Cart.prototype.itemCount =
-function() {
-  return(0);
-};
+Cart.prototype.productCount = function() {
+  return 0;
+};  
