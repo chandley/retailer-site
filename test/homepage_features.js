@@ -24,6 +24,15 @@ describe('homepage', function(){
         expect("#cart").to.include.text("0 items");
       });
     });
+
+    it("shows a product name, category and price", function() {
+      casper.then(function(){
+        expect("#shop").to.include.text("Flip Flops, Red")
+        expect("#shop").to.include.text("£19.00")
+        expect("#shop").to.include.text("Men's Footwear")
+      })
+    });
+    
     
   })  
   
