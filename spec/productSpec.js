@@ -3,7 +3,7 @@ describe("Product", function() {
   var dreamcoat;
 
   beforeEach(function(){
-    dreamcoat = new Product('Dreamcoat',100)
+    dreamcoat = new Product('Dreamcoat',100,'mens clothing')
   })
 
   it("has a name", function() {
@@ -13,6 +13,10 @@ describe("Product", function() {
   it("has a price", function() {
     expect(dreamcoat.price).toEqual(100)
   });
-    
+
+  it("has a category", function() {
+    expect(dreamcoat.category).toEqual('mens clothing')
+  });
+  
 });  
 
