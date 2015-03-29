@@ -11,6 +11,11 @@ describe("Cart", function() {
   it("starts off empty", function() {
     expect(cart.productCount()).toEqual(0)
   });
+
+  it("can add a product", function() {
+    cart.add('product')
+    expect(cart.products).toContain('product')
+  });
   
 });  
 
