@@ -17,6 +17,13 @@ describe('homepage', function(){
         expect('#cart').to.include.text('1 item');
       })
     });
+    it("user removes an item", function() {
+      casper.then(function(){
+        this.mouse.click('#pick_item')
+        this.mouse.click('#remove_item')
+        expect("#cart").to.include.text("0 items");
+      });
+    });
     
   })  
   
