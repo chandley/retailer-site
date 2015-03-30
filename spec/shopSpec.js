@@ -9,5 +9,10 @@ describe("Shop", function(){
   it("starts off empty", function() {
     expect(shop.products.length).toEqual(0)
   });
+
+  it("can add a product", function() {
+    shop.add('product')
+    expect(shop.products).toContain('product')
+  });
   
 })
