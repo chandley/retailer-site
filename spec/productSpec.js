@@ -18,5 +18,4 @@ describe("Product", function() {
     expect(dreamcoat.category).toEqual('mens clothing')
   });
   
-});  
-
+});

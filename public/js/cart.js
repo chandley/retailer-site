@@ -11,5 +11,6 @@ Cart.prototype.productCount = function() {
 
 Cart.prototype.add =
 function(product) {
-  this.products.push(product);
+  this.products.push(product( "Flip Flops, Red", "£19.00", "Men's Footwear"));
 };
+

@@ -1,13 +1,24 @@
 <html>
   <head>
     <style>
+      table, th, td {border: 1px solid black;} 
     </style>
     <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/product.js"></script>
     <script src="js/index.js"></script>
   </head>
   <body>
     <h1>Welcome to the boutique</h1>
+    <table id='shop'>
+      <tr>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Quantity in Stock</th>
+      </tr>
+    </table>
     <div id='cart'>
     <h2>Shopping Cart</h2>
     <span id='count'>0 items</span>
